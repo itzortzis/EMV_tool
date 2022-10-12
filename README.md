@@ -1,7 +1,8 @@
 # EMV_tool
 
 EMV stands for "Experimental Metrics Visualization".
-This is a simple tool for visualizing the metrics of a repetitive experiment.
+EMV_tool is a simple tool for visualizing the metrics of a repetitive experiment.
+It is a living repository and new commits will appear when new updates occur.
 
 All the experimental iterations should be placed in a single numpy array with the following structure. The height of this array represents the several repetitions of the experiment; each row corresponds to a single repetition, the width represents the time points (x-axis) of the experiment, while the depth depicts the different metrics used for the evaluation of the experiment.
 
@@ -35,11 +36,11 @@ fig_args = {
 - window: Variation number
 ```
 gen_args = {
-  "num_of_timepoints": 100, # The number of experiment x-axis points
-  "num_of_iterations": 20,  # The number of experiment repetitions
-  "num_of_metrics": 3,      # The number of experiment metrics
-  "metric_id": 2,           # Metric id for the sample metrics
-  "window": 0.8             # Variation number
+  "num_of_timepoints": 100, 
+  "num_of_iterations": 20,  
+  "num_of_metrics": 3,      
+  "metric_id": 2,           
+  "window": 0.8 
 }
 ```
 
