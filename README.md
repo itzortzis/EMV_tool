@@ -44,6 +44,12 @@ gen_args = {
 }
 ```
 
+## Additional libraries
+
+- numpy
+- scipy
+- matplotlib
+
 ## Sample outputs
 
 ![metric_1](https://user-images.githubusercontent.com/105294556/195347274-709cc796-3864-4958-89ee-8035b4e122c9.png)
