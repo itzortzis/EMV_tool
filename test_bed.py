@@ -1,5 +1,5 @@
-import utils.sample_data_utils as sdu
-import utils.utils as utils
+import emv.sample_data_utils as sdu
+import emv.utils as utils
 
 
 # Simulation configuration
