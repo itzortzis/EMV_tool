@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name='EMV_tool',
+    name='utils',
     version='0.1.0',
     author='I.N.Tzortzis',
     author_email='i.n.tzortzis@gmail.com',
@@ -18,6 +18,6 @@ setuptools.setup(
         "Bug Tracker": "https://github.com/itzortzis/EMV_tool/issues"
     },
     license='GPL-3.0',
-    packages=['EMV_tool'],
+    packages=['utils'],
     install_requires=['numpy', 'scipy', 'matplotlib'],
 )
