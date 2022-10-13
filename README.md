@@ -50,6 +50,16 @@ gen_args = {
 - scipy
 - matplotlib
 
+
+## Installation
+
+The EMV_tool can be cloned from here or it can be installed using Python pip tool
+
+- Option 1: Clone the repository and see the exmple case in test_bed.py file
+- Option 2:
+  - Install tool using ```pip3 install git+https://github.com/itzortzis/EMV_tool.git```
+  - Import the needed components ```from emv import utils``` or/and ```from emv import sample_data_utils as sdu```
+
 ## Sample outputs
 
 ![metric_1](https://user-images.githubusercontent.com/105294556/195347274-709cc796-3864-4958-89ee-8035b4e122c9.png)
