@@ -53,3 +53,27 @@ def plot_metrics_ci(ci_elems, TPS, args):
   plt.ylabel(args["ylabel"], fontsize = args["font_size"])
   plt.grid()
   plt.show()
+
+
+# Bar_metrics_ci:
+# ----------------
+# Presents the 95% confidence interval of the experimental data
+# using bar plots.
+#
+# -> ci_elems: vectors of the lowest, median and highest values
+# <- args: configuration parameters for the figure
+
+def bar_metrics_ci(ci_elems, TPS, args):
+  low  = ci_elems[0]
+  med  = ci_elems[1]
+  high = ci_elems[2]
+  x = np.arange(TPS)+1
+  width = 0.35
+  fig, ax = plt.subplots()
+  fig.set_size_inches(7, 5)
+  line = ax.bar(x, med, width, yerr = high-med)
+  #ax.fill_between(x, low, high, color = args["var_color"], alpha=.1)
+  plt.xlabel(args["xlabel"], fontsize = args["font_size"])
+  plt.ylabel(args["ylabel"], fontsize = args["font_size"])
+  plt.grid()
+  plt.show()
