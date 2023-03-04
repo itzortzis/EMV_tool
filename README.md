@@ -1,5 +1,8 @@
 # EMV_tool
 
+<img src="https://user-images.githubusercontent.com/105294556/222930666-108a037b-4e48-42a3-80c6-70fbcf59128e.svg" width="200" height="200">
+
+
 EMV stands for "Experimental Metrics Visualization".
 EMV_tool is a simple tool for visualizing the metrics of a repetitive experiment.
 It is a living repository and new commits will appear when new updates occur.
