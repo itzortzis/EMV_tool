@@ -1,6 +1,6 @@
 # EMV_tool
 
-<img src="https://user-images.githubusercontent.com/105294556/222930666-108a037b-4e48-42a3-80c6-70fbcf59128e.svg" width="200" height="200">
+<img src="https://user-images.githubusercontent.com/105294556/222930741-8991c21e-050a-41b2-8e0f-25c82b7e6dba.svg" width="200" height="200">
 
 
 EMV stands for "Experimental Metrics Visualization".
