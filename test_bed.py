@@ -13,6 +13,7 @@ gen_args = {
 
 # Figure configuration
 fig_args = {
+  "fig_path": "test_path.png",
   "med_color": '#fb8500',
   "var_color": '#fb8500',
   "xlabel": 'Time Points',
