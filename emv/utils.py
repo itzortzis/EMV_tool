@@ -52,7 +52,6 @@ def plot_metrics_ci(ci_elems, TPS, args):
   plt.xlabel(args["xlabel"], fontsize = args["font_size"])
   plt.ylabel(args["ylabel"], fontsize = args["font_size"])
   plt.grid()
-  plt.savefig(args['fig_path'])
   plt.show()
 
 
