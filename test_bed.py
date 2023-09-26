@@ -17,7 +17,9 @@ fig_args = {
   "var_color": '#fb8500',
   "xlabel": 'Time Points',
   "ylabel": 'Metric Name',
-  "font_size": 14
+  "font_size": 14,
+  "ymin", 0,
+  "ymax", 10
 }
 
 metrics = sdu.generate_sample_metrics(gen_args)
