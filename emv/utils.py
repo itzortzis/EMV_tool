@@ -24,7 +24,7 @@ def compute_ci(metrics, args):
     m  = metrics[indx, :, args["metric_id"]]
 
     data = m
-    temp = st.t.interval(alpha=0.95, df=len(data)-1, loc=np.mean(data), scale=st.sem(data))
+    temp = st.t.interval(confidence=0.95, df=len(data)-1, loc=np.mean(data), scale=st.sem(data))
     low[indx]  = temp[0]
     high[indx] = temp[1]
     med[indx]  = (temp[0] + temp[1])/2
