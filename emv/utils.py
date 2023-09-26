@@ -49,6 +49,7 @@ def plot_metrics_ci(ci_elems, TPS, args):
   fig.set_size_inches(7, 5)
   line, = ax.plot(x, med, color = args["med_color"])
   ax.fill_between(x, low, high, color = args["var_color"], alpha=.1)
+  ax.set_ylim([args["y_min"], args["ymax"])
   plt.xlabel(args["xlabel"], fontsize = args["font_size"])
   plt.ylabel(args["ylabel"], fontsize = args["font_size"])
   plt.grid()
