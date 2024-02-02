@@ -54,7 +54,7 @@ def plot_metrics_ci(ci_elems, TPS, args):
   plt.ylabel(args["ylabel"], fontsize = args["font_size"])
   plt.grid()
   if args['save']:
-    plt.savefig(args['path_to_fig'])
+    plt.savefig(args['path_to_fig'], format='eps')
   else:
     plt.show()
 
@@ -82,6 +82,6 @@ def bar_metrics_ci(ci_elems, TPS, args):
   ax.set_ylim([int(args['ymin']), int(args['ymax'])])
   # plt.grid()
   if args['save']:
-    plt.savefig(args['path_to_fig'])
+    plt.savefig(args['path_to_fig'], format='eps')
   else:
     plt.show()

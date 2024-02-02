@@ -23,7 +23,7 @@ fig_args = {
   "save": False,
   "width": 0.65,
   "xlabels": ['Label 1', 'Label 2', 'Label 3', 'Label 4', 'Label 5'],
-  "path_to_fig": "./experimental_results.png"
+  "path_to_fig": "./experimental_results.eps"
 }
 
 metrics = sdu.generate_sample_metrics(gen_args)
