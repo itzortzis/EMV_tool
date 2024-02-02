@@ -53,7 +53,10 @@ def plot_metrics_ci(ci_elems, TPS, args):
   plt.xlabel(args["xlabel"], fontsize = args["font_size"])
   plt.ylabel(args["ylabel"], fontsize = args["font_size"])
   plt.grid()
-  plt.show()
+  if args['save']:
+    plt.savefig(args['path_to_fig']
+  else:
+    plt.show()
 
 
 # Bar_metrics_ci:
@@ -77,4 +80,7 @@ def bar_metrics_ci(ci_elems, TPS, args):
   plt.xlabel(args["xlabel"], fontsize = args["font_size"])
   plt.ylabel(args["ylabel"], fontsize = args["font_size"])
   plt.grid()
-  plt.show()
+  if args['save']:
+    plt.savefig(args['path_to_fig']
+  else:
+    plt.show()
