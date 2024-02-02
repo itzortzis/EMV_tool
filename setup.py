@@ -8,7 +8,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name='emv',
-    version='0.4.0',
+    version='0.4.1',
     author='I.N.Tzortzis',
     author_email='i.n.tzortzis@gmail.com',
     description='EMV_tool installation',

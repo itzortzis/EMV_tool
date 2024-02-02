@@ -18,8 +18,12 @@ fig_args = {
   "xlabel": 'Time Points',
   "ylabel": 'Metric Name',
   "font_size": 14,
-  "ymin", 0,
-  "ymax", 10
+  "ymin": 0,
+  "ymax": 10,
+  "save": False,
+  "width": 0.65,
+  "xlabels": ['Label 1', 'Label 2', 'Label 3', 'Label 4', 'Label 5'],
+  "path_to_fig": "./experimental_results.png"
 }
 
 metrics = sdu.generate_sample_metrics(gen_args)

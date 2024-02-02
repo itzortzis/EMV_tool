@@ -72,7 +72,7 @@ def bar_metrics_ci(ci_elems, TPS, args):
   med  = ci_elems[1]
   high = ci_elems[2]
   x = np.arange(TPS)+1
-  width = 0.35
+  width = args['bar_width']
   fig, ax = plt.subplots()
   fig.set_size_inches(7, 5)
   line = ax.bar(x, med, width, yerr = high-med, color=args['med_color'])
