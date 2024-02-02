@@ -75,11 +75,12 @@ def bar_metrics_ci(ci_elems, TPS, args):
   width = 0.35
   fig, ax = plt.subplots()
   fig.set_size_inches(7, 5)
-  line = ax.bar(x, med, width, yerr = high-med)
-  #ax.fill_between(x, low, high, color = args["var_color"], alpha=.1)
+  line = ax.bar(x, med, width, yerr = high-med, color=args['med_color'])
   plt.xlabel(args["xlabel"], fontsize = args["font_size"])
   plt.ylabel(args["ylabel"], fontsize = args["font_size"])
-  plt.grid()
+  plt.xticks(np.arange(TPS) + 1, args['xlabels'])
+  ax.set_ylim([int(args['ymin']), int(args['ymax'])])
+  # plt.grid()
   if args['save']:
     plt.savefig(args['path_to_fig'])
   else:
